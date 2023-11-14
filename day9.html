@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  p{
+    background-color: lightblue;
+  }
+  h1{
+    background-color: red;
+  }
+  label{
+    background-color: brown;
+  }
+  *{
+    background-color: green;
+  }
+</style>
+<body>
+  <form action="./sign up.html">
+  <fieldset>
+    <legend><h1>signup form</h1></legend>
+    <label for ="fname">First name:</label>
+    <input type="text"name="fname" id="firstname" placeholder="enter firstname"/><br></form><br>
+    <label for="sname">secondname:</label>
+    <input type="text "name="sname" id="sname"/><br>
+    <label for ="phone">mobilenumber</label>
+    <input type ="text" id="phone" type="tel" pattern="=[0-9]{10}"/><br>
+    <label for ="mail">email:</label>
+    <input type="email" name="mail" id="mail"/>
+    <p>enter your  gender:</p>
+
+    <label for="male">male</label><input type="radio" value="male" name="gender" id="male">
+    <label for="female">female</label><input type="radio" value="female" name="gender" id="female">
+    <label for="others">others</label><input type="radio" value="others" name="gender" id="others">
+
+    <br><input type="submit"/>
+    </fieldset>
+  </form>
+  
+</body>
+</html>
