@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .border{
+            border: 2px solid black;
+            padding: 10px;
+            background: radial-gradient(gold violet pink lightblue);
+            transition: all 10s;
+            height: 500px;
+            width: 1100px;
+            display: inline-block;
+            background-color: aquamarine;
+        }
+
+        .border:hover{
+            border: 3px solid red;
+            width: 1100px;
+            height: 900px;
+            border-radius: 5%;
+            background:radial-gradient(red green yellow white blue) ;
+        }
+
+       @keyframes manrunning{
+        from{margin-left: 20px;}
+        to{margin-left: 150px;}
+       
+    }
+    .fd{
+        margin-top: 300px;
+        animation-name: manrunning;
+        animation-duration: 20s;
+    }
+
+     @keyframes butterfly{
+        from{rotate:60deg;}
+        to{rotate:360deg;}
+
+    }
+    .n{
+        margin-left: 700px;
+        animation-name: butterfly;
+        animation-duration: 8s;
+    } 
+    @keyframes butterflyblack{
+        from{rotate:30deg;}
+        to{rotate:360deg;}
+
+    }
+    .m{
+        margin-top: 60px;
+        margin-left: 300px;
+        animation-name: butterflyblack;
+        animation-duration: 30s;
+    } 
+
+    @keyframes carposition{
+        from{margin-right: 500px;}
+        to{margin-left: 100px;}
+
+    }
+    .pd{
+        margin-left:600px;
+        animation-name: carposition;
+        animation-duration: 30s;
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="border">
+            <img class="n" src="http://clipartmag.com/images/colorful-butterflies-images-30.png" height="40"/>
+        <img  class="m" src="https://tse1.mm.bing.net/th?id=OIP.jfdCrZDKWNMGj7PX0rolDwHaHC&pid=Api&P=0&h=220" height="50"/>
+        <div class="nd">
+            <img class="fd" src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-running-man-silhouette-free-buckle-png-image_4757338.jpg" height="130"/>
+            <img class="pd" src="http://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Cars-Full-HD-Photos-1920x1080.jpg" height="100"/>
+            <img class="mn" src="http://clipart-library.com/image_gallery/n983695.jpg" width="1100"/>
+            
+        </div>
+    </div>
+</body>
+</html>
